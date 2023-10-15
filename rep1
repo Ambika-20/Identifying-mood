@@ -1,0 +1,25 @@
+#How to ask food based on your parent's mood
+parents_mood=input("Enter your parent's mood:(type calm/happy/angry/sad)")
+
+def getmood(mood):
+    if mood == "angry":
+        return 25
+    elif mood == "sad":
+        return 50
+    elif mood == "calm":
+        return 75
+    elif mood == "happy":
+        return 100
+    else:
+        return 0
+    
+mood = getmood(parents_mood)  
+if mood == 75 :
+    print("Ask your parents to order food")
+elif mood == 100:
+    print("Ask your parents to take you to a restaurant")
+elif mood == 25:
+    print("Just eat the food given to you by your parents")
+else:
+    print("Prepare a yummy food for your parents")
+    
